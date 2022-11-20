@@ -27,6 +27,7 @@ reg query HKU\S-1-5-19 >nul 2>nul || (
     exit
 )
 (
+    echo.>"%localappdata%\SquirrelTemp\SquirrelSetup.log"
     del /f /s /q "%temp%"
     del /f /s /q "%windir%\Temp"
     del /f /s /q "%windir%\Prefetch"
